@@ -42,7 +42,7 @@ def main():
         if userQuestions:
             docs = knowledgeBase.similarity_search(userQuestions)
             llm = ChatGroq(
-                    model="llama-3.1-8b-instant",      # <- required
+                    model="llama-3.1-8b-instant",
                     groq_api_key = os.environ.get("GROQ_API_KEY")
                 )
             chain = load_qa_chain(llm, chain_type="stuff")
@@ -55,3 +55,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
