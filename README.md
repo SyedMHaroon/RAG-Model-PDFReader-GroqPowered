@@ -96,7 +96,7 @@ You can modify these settings in the `app.py` file:
 ```python
 # Change the LLM model
 llm = ChatGroq(
-    model="llama-3-70b-8192",  # or other available models
+    model="llama-3.1-8b-instant",  # or other available models
     groq_api_key=os.environ.get("GROQ_API_KEY")
 )
 
